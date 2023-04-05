@@ -7,11 +7,11 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 <head>
 		   <?$APPLICATION->ShowHead();?>
 	<title><?$APPLICATION->ShowTitle();?></title>
-	<link rel="stylesheet" href = "/bitrix/templates/.default/template_style.css"/>
-	<script type="text/javascript" src="/bitrix/templates/.default/js/jquery-1.8.2.min.js"></script>
-	<script type="text/javascript" src="/bitrix/templates/.default/js/slides.min.jquery.js"></script>
-	<script type="text/javascript" src="/bitrix/templates/.default/js/jquery.carouFredSel-6.1.0-packed.js"></script>
-	<script type="text/javascript" src="/bitrix/templates/.default/js/functions.js"></script>
+	<link rel="stylesheet" href = "/bitrix/templates/.default/tempate_style.css"/>
+	<script type="text/javascript" src="/bitrix/tempates/.default/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="/bitrix/tempates/.default/js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="/bitrix/tempates/.default/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+	<script type="text/javascript" src="/bitrix/tempates/.default/js/functions.js"></script>
 	
 	<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
 </head>
@@ -23,7 +23,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 				<table>
 					<tr>
 						<td rowspan="2" class="hd_companyname">
-							<h1><a href="index.php">Мебельный магазин</a></h1>
+							<h1><a href=""><?$APPLICATION->ShowTitle(false);?></a></h1>
 						</td>
 						<td rowspan="2" class="hd_txarea">
 							<span class="tel">8 (495) 212-85-06</span>	<br/>	
@@ -64,7 +64,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 				</table>
 				<div class="nv_topnav">
 					<ul>
-						<li><a href=""   class="menu-img-fon"  style="background-image: url(/bitrix/templates/.default/images/nv_home.png);" ><span></span></a></li>
+						<li><a class="menu-img-fon" style="background-image: url(/bitrix/tempates/.default/images/nv_home.png);" href="/"><span></span></a></li>
 						<li><a href=""><span>Компания</span></a>
 							<ul>
 								<li><a href="">Пункт 1</a></li>
@@ -97,19 +97,3 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		</div>
 		
 		<!--- // end header area --->
-		<div class="bc_breadcrumbs">
-			<ul>
-				<li><a href="">Каталог</a></li>
-				<li><a href="">Мебель</a></li>
-				<li><a href="">Выставки и события</a></li>
-			</ul>
-			<div class="clearboth"></div>
-		</div>
-		<div class="main_container page">
-			<div class="mn_container">
-				<div class="mn_content">
-					<div class="main_post">
-						<div class="main_title">
-							<p class="title"><?$APPLICATION->ShowTitle(false);?></p>
-						</div>
-						<!-- workarea -->
